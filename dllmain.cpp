@@ -63,7 +63,7 @@ struct CConfig
 
 void RestoreIntroFunctionality()
 {
-    std::this_thread::sleep_for(std::chrono::seconds(8));
+    std::this_thread::sleep_for(std::chrono::seconds(30));
 
     if (legalScreenOriginalsSaved)
     {
@@ -118,7 +118,7 @@ void __fastcall SelectMod() {
     std::cout << "[9] Multi-mod selection" << std::endl;
 
     int maxChoice = 9; // 0..8 single, 9 = multi
-    std::string prompt = "Waiting for input..." + std::to_string((int)quickCount);
+    std::string prompt = "Waiting for input...";
     std::cout << std::endl << prompt;
     std::cout.flush();
 
